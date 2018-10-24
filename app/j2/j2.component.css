@@ -1,0 +1,43 @@
+#juego{
+	width:100%;
+	
+}
+
+.piedra{
+	background-image:url('http://pixeloide.com/utn/img/piedra.png');
+	
+}
+.papel{
+	background-image:url('http://pixeloide.com/utn/img/papel.png');
+}
+.tijera{
+	background-image:url('http://pixeloide.com/utn/img/tijera.png');
+}
+a,.ppt{
+
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center center;
+	    width: 120px;
+    position: relative;
+    display: inline-block;
+    height: 110px;
+}
+
+.fuera{
+	transform:translateX(-100%);
+}
+
+#pc{
+	transition:all 500ms;
+	transform:translateX(100%);
+}
+
+#vos{
+	transition:all 500ms;
+	transform:translateX(-100%);
+}
+
+#pc.tijera, #pc.papel, #pc.tijera, #vos.papel, #vos.piedra, #vos.tijera{
+transform:translateX(0%);
+}

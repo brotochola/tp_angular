@@ -1,0 +1,6 @@
+<h1>Ahorcado</h1>
+
+<div id="aho"></div>
+<div><button *ngFor="let l of arrDesc" class="btn btn-danger">{{l}}</button></div>
+
+<input   (keyup.enter)="dale()"  id="ti" maxlength="1" [(ngModel)]="textoIngresado" class="form-control"><button (click)="dale()" class="btn btn-primary">!!</button>

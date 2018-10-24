@@ -1,0 +1,31 @@
+<div class="row">
+<div class="col-4"></div>
+<div class="col-4">
+<br>
+<div id="noLogueado" *ngIf="!estaLogueado">
+	<h3>Login:</h3>
+	usuario: <input [(ngModel)]="user" type="text" class="form-control"><br>
+	contraseña: <input [(ngModel)]="pass" type="password" class="form-control"><br>
+	<button class="btn btn-primary" (click)="login()">login</button>
+
+	<hr>
+	<br>
+	<h3>Registro de usuario nuevo:</h3>
+
+	usuario: <input type="text" [(ngModel)]="userReg" class="form-control"><br>
+	contraseña: <input type="password" [(ngModel)]="passReg" class="form-control"><br>
+	repetir contraseña: <input type="password" [(ngModel)]="passReg2" class="form-control"><br>
+	<button class="btn btn-primary" (click)="registro()">registro</button>
+
+	</div>
+	<div class="col-4"></div>
+	</div>
+</div>
+
+<div id="logueado" *ngIf="estaLogueado" class="text-center">
+	<h1>{{nombre}}</h1>
+	<h2>id #{{id}}</h2>
+	<h2>{{puntos}}</h2>
+<button class="btn btn-danger" (click)="logout()">logout</button>
+
+</div>

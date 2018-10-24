@@ -1,0 +1,59 @@
+<nav class=" navbar navbar-expand-lg navbar-light bg-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id="menuUL">
+      <li class="nav-item ">  <a class="nav-link" href="#" ><b>{{nombre}}</b></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"  (click)="cambiarSeccion('home')">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="cambiarSeccion('j1')">Juego 1</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="#"  (click)="cambiarSeccion('j2')">juego 2</a>
+      </li>
+              <li class="nav-item">
+        <a class="nav-link" href="#"  (click)="cambiarSeccion('j3')">juego 3</a>
+      </li>
+              <li class="nav-item">
+        <a class="nav-link" href="#"  (click)="cambiarSeccion('j4')">juego 4</a>
+      </li>
+              <li class="nav-item">
+        <a class="nav-link" href="#"  (click)="cambiarSeccion('j5')">juego 5</a>
+      </li>
+              <li class="nav-item">
+        <a class="nav-link" href="#"  (click)="cambiarSeccion('ranking')">ver ranking</a>
+      </li>
+   <!--   <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>-->
+    </ul>
+   
+  </div>
+</nav>
+
+<div class="container text-center">
+  <app-home *ngIf="home" (loginEmitter)="yaSeLogueo($event)" ></app-home>
+  <app-j1 *ngIf="j1"></app-j1>
+  <app-j2 *ngIf="j2"></app-j2>
+  <app-j3 *ngIf="j3"></app-j3>
+  <app-j4 *ngIf="j4"></app-j4>
+  <app-j5 *ngIf="j5"></app-j5>
+  <app-ranking *ngIf="ranking"></app-ranking>
+</div>

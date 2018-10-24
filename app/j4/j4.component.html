@@ -1,0 +1,21 @@
+<h1> numero secreto </h1>
+
+
+<div id="juego" class="text-center">
+	
+<div id="tapa"></div>
+<div id="num" >{{numeroSecreto}}</div>
+
+</div>
+<div class="container">
+	<p id="qn">Qué número es?</p>
+	<div class="row">
+		<div class="col-3"></div>
+		<div class="col-6">
+<input  class="form-control" [(ngModel)]="numIngresado"></div>
+<div class="col-3">
+<button class="btn btn-primary" (click)="fin()"> !</button>
+</div>
+</div>
+
+</div>

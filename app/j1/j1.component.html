@@ -1,0 +1,8 @@
+<h1> ANAGRAMA </h1>
+<div><span *ngFor="let l of letras"> <button class="btn btn-primary" (click)="agregarLetra($event)">{{l}}</button> </span> </div>
+
+<!-- aca se arma la palabra -->
+<div>
+<span *ngFor="let l of palabraArmada"><button class="btn btn-warning" (click)="borrarLetra($event)">{{l}}</button></span>
+
+</div>
