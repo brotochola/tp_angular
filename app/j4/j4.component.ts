@@ -16,7 +16,7 @@ export class J4Component implements OnInit {
   	this.intvl=setInterval(
       ()=>{
         this.clock(this.n)
-      }),100);
+      },100);
   }
 
   clock(m:number){

@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
      localStorage["token"]="";
        this.puntos= localStorage["puntos"]=-1;
         this.id=localStorage["id_user"]=-1;
-          this.loginEmitter.emit("");
+          this.loginEmitter.emit(null);
   }
 
   registro(){

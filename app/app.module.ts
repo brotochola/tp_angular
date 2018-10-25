@@ -12,7 +12,7 @@ import { RankingComponent } from './ranking/ranking.component';
 
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
+import * as $ from 'jquery/dist/jquery.min.js';
 
 
 
